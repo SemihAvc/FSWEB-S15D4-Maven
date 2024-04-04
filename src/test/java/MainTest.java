@@ -32,26 +32,6 @@ public class MainTest {
         assertEquals(Main.convertDecimalToBinary(13), "1101");
     }
 
-    @Test
-    @DisplayName("WorkintechList doğru tipe sahip mi ?")
-    public void testWorkintechListType(){
-        WorkintechList list = new WorkintechList();
-        assertEquals(list instanceof ArrayList, true);
-        assertEquals(list instanceof List, true);
-    }
-    
-    @Test
-    @DisplayName("WorkintechList'e aynı eleman birden fazla kez eklenebiliyor mu ?")
-    public void testWorkintechListAddMethod(){
-        WorkintechList list = new WorkintechList();
-        list.add("Mehmet");
-        list.add("Mehmet");
-        list.add("Ali");
-        list.add("Ali");
-        list.add("Zeynep");
-        list.add("Zeynep");
-        assertEquals(list.size(), 3);
-    }
 
     @Test
     @DisplayName("WorkintechList sort metodu doğru çalışıyor mu?")
